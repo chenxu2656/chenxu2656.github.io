@@ -7,21 +7,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>树莓派使用基础教程（1）系统安装及远程登陆 - 许许如生前端</title>
+<title>树莓派实战（2）让小灯bling~bling~ - 许许如生前端</title>
 
 
     <meta property="og:type" content="article">
-<meta property="og:title" content="树莓派使用基础教程（1）系统安装及远程登陆">
-<meta property="og:url" content="http://yoursite.com/child/2019/12/25/rpiPre1/index.html">
+<meta property="og:title" content="树莓派实战（2）让小灯bling~bling~">
+<meta property="og:url" content="http://yoursite.com/child/2019/12/25/rpiUse2/index.html">
 <meta property="og:site_name" content="许许如生前端">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://image.qianduan.ltd/blogscenery1.jpg">
+<meta property="og:image" content="http://image.qianduan.ltd/blogscenery2.png">
 <meta property="article:published_time" content="2019-12-25T03:13:18.000Z">
-<meta property="article:modified_time" content="2019-12-25T08:40:01.665Z">
+<meta property="article:modified_time" content="2019-12-25T08:20:46.675Z">
 <meta property="article:author" content="许许如生">
 <meta property="article:tag" content="树莓派">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://image.qianduan.ltd/blogscenery1.jpg">
+<meta name="twitter:image" content="http://image.qianduan.ltd/blogscenery2.png">
 
 
 
@@ -79,7 +79,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="树莓派使用基础教程（1）系统安装及远程登陆" height="28">
+                <img src="/images/logo.png" alt="树莓派实战（2）让小灯bling~bling~" height="28">
             
             </a>
         </div>
@@ -128,7 +128,7 @@
     
     <div class="card-image">
         <span  class="image is-7by1">
-            <img class="thumbnail" src="http://image.qianduan.ltd/blogscenery1.jpg" alt="树莓派使用基础教程（1）系统安装及远程登陆">
+            <img class="thumbnail" src="http://image.qianduan.ltd/blogscenery2.png" alt="树莓派实战（2）让小灯bling~bling~">
         </span>
     </div>
     
@@ -146,7 +146,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes read (About 531 words)
+                    2 minutes read (About 331 words)
                 </span>
                 
                 
@@ -155,61 +155,29 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                树莓派使用基础教程（1）系统安装及远程登陆
+                树莓派实战（2）让小灯bling~bling~
             
         </h1>
         <div class="content">
-            <h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h3 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h3><blockquote>
-<p>树莓派提供了系统安装工具<a href="https://www.raspberrypi.org/documentation/installation/noobs.md">NOOBS</a></p>
-</blockquote>
-<h4 id="1-进入下载页面"><a href="#1-进入下载页面" class="headerlink" title="1. 进入下载页面"></a>1. 进入下载页面</h4><blockquote>
-<p>左侧是 图形化界面的系统、右侧是不带图形化界面的系统，没什么区别 <a href="https://www.raspberrypi.org/downloads/">https://www.raspberrypi.org/downloads/</a> 我们选右边这个，高级一点<br> <img src="http://image.qianduan.ltd/s1.png" alt="image"></p>
-</blockquote>
-<h4 id="2-选择一种方式下载（迅雷好像快一点）"><a href="#2-选择一种方式下载（迅雷好像快一点）" class="headerlink" title="2. 选择一种方式下载（迅雷好像快一点）"></a>2. 选择一种方式下载（迅雷好像快一点）</h4><blockquote>
-<p>网盘我也存了一份：<a href="https://pan.baidu.com/s/1QFVUocKJpe1QmxssRWuRHg">https://pan.baidu.com/s/1QFVUocKJpe1QmxssRWuRHg</a></p>
-</blockquote>
-<p><img src="http://image.qianduan.ltd/s2.png" alt="image"></p>
-<h4 id="3-解压"><a href="#3-解压" class="headerlink" title="3. 解压"></a>3. 解压</h4><blockquote>
-<p>解压下来是这个样子，目录不要含有中文，不然做系统盘会出错</p>
-</blockquote>
-<p><img src="http://image.qianduan.ltd/s6.png" alt="image"></p>
-<h4 id="4-格式化sd卡，格式化成FAT"><a href="#4-格式化sd卡，格式化成FAT" class="headerlink" title="4. 格式化sd卡，格式化成FAT"></a>4. 格式化sd卡，格式化成FAT</h4><blockquote>
-<p>感觉格式化完内存显示有问题用磁盘管理工具重新分一下区然后重新格式化</p>
-</blockquote>
-<h4 id="5-下载系统写入工具"><a href="#5-下载系统写入工具" class="headerlink" title="5. 下载系统写入工具"></a>5. 下载系统写入工具</h4><blockquote>
-<p>推荐使用 diskimage，扔个CDN加速的下载链接给你：<a href="http://files.qianduan.ltd/win32diskimager-1.0.0-install.exe">http://files.qianduan.ltd/win32diskimager-1.0.0-install.exe</a></p>
-</blockquote>
-<h4 id="6-写入系统文件"><a href="#6-写入系统文件" class="headerlink" title="6. 写入系统文件"></a>6. 写入系统文件</h4><p><img src="http://image.qianduan.ltd/s8.png" alt="image"></p>
-<h4 id="7-emmm快成功了"><a href="#7-emmm快成功了" class="headerlink" title="7. emmm快成功了"></a>7. emmm快成功了</h4><h3 id="通过ssh链接"><a href="#通过ssh链接" class="headerlink" title="通过ssh链接"></a>通过ssh链接</h3><h4 id="1-在boot目录下写入-SSH文件"><a href="#1-在boot目录下写入-SSH文件" class="headerlink" title="1. 在boot目录下写入 SSH文件"></a>1. 在boot目录下写入 SSH文件</h4><h4 id="2-在根目录下新建-wpa-supplicant-conf"><a href="#2-在根目录下新建-wpa-supplicant-conf" class="headerlink" title="2. 在根目录下新建 wpa_supplicant.conf"></a>2. 在根目录下新建 <code>wpa_supplicant.conf</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">country&#x3D;CN</span><br><span class="line">ctrl_interface&#x3D;DIR&#x3D;&#x2F;var&#x2F;run&#x2F;wpa_supplicant GROUP&#x3D;netdev</span><br><span class="line">update_config&#x3D;1</span><br><span class="line">network&#x3D;&#123;</span><br><span class="line">    ssid&#x3D;&quot;WiFi-A&quot;</span><br><span class="line">    psk&#x3D;&quot;12345678&quot;</span><br><span class="line">    key_mgmt&#x3D;WPA-PSK</span><br><span class="line">    priority&#x3D;1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <h1 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h1><h3 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import RPi.GPIO as GPIO</span><br><span class="line">import time   #引用time模块</span><br><span class="line">GPIO.setmode(GPIO.BOARD)</span><br><span class="line">GPIO.setup(7,GPIO.OUT)</span><br><span class="line">while True:</span><br><span class="line">    GPIO.output(7,GPIO.HIGH)</span><br><span class="line">    time.sleep(0.1)   # 延时0.1秒</span><br><span class="line">    GPIO.output(7,GPIO.LOW)</span><br><span class="line">    time.sleep(0.1)</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>#ssid:网络的ssid</p>
+<h3 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h3><blockquote>
+<p>相对于让小灯亮，让丫blingbling的亮只是多了个延时程序</p>
 </blockquote>
-<blockquote>
-<p>#psk:密码</p>
+<h4 id="引用-time-模块"><a href="#引用-time-模块" class="headerlink" title="引用 time 模块"></a>引用 time 模块</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import time</span><br></pre></td></tr></table></figure>
+<p>time的功能还是很多的，但是在pi里面用到的（入门使用）不是太多，当然等玩的好了写个后台什么的会经常用到,我们暂且讨论两个 ==sleep== 和 ==clock==</p>
+<h5 id="time-sleep-sec"><a href="#time-sleep-sec" class="headerlink" title="time.sleep(sec)"></a>time.sleep(sec)</h5><blockquote>
+<p>推迟调用线程的运行,实现程序的延时</p>
 </blockquote>
-<blockquote>
-<p>#priority:连接优先级，数字越大优先级越高（不可以是负数）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import time</span><br><span class="line">print(&quot;开始&quot;)</span><br><span class="line">time.sleep(5)</span><br><span class="line">print(&quot;5秒后结束&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 运行结果</span><br><span class="line">pi@raspberrypi:~&#x2F;code $ python3 test3.py</span><br><span class="line">开始</span><br><span class="line">5秒后结束</span><br><span class="line">pi@raspberrypi:~&#x2F;code $</span><br></pre></td></tr></table></figure>
+<h5 id="time-clock"><a href="#time-clock" class="headerlink" title="time.clock()"></a>time.clock()</h5><blockquote>
+<p>就是经常将的时间戳，知道这玩意可以用来记录一段时间（比如程序运行的时间）就行</p>
 </blockquote>
-<blockquote>
-<p>#scan_ssid:连接隐藏WiFi时需要指定该值为1</p>
-</blockquote>
-<blockquote>
-<p>#key_mgmt:加密方式 （进路由器后台看）</p>
-<blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#96;&#96;&#96; key_mgmt&#x3D;NONE &#96;&#96;&#96; ：WEP加密</span><br><span class="line"></span><br><span class="line">![image](http:&#x2F;&#x2F;image.qianduan.ltd&#x2F;s10.png)</span><br><span class="line">#### 3. 把sd卡安装至卡槽，上电启动</span><br><span class="line"></span><br><span class="line">#### 4. 查看树莓派IP </span><br><span class="line">1. 可以通过路由器后台查看</span><br><span class="line">![image](http:&#x2F;&#x2F;image.qianduan.ltd&#x2F;s5.png)</span><br><span class="line">2. 用命令ping一下 </span><br></pre></td></tr></table></figure>
-<p>ping -4 raspberrypi</p>
-</blockquote>
-</blockquote>
-<pre><code>&gt; 默认ping出的是IPV6，所以加个 -4 强制转换一下
-#### 5. 下载个远程登陆工具
-&gt; 1. xshell （相对较专业）和 putty（开源轻便） 选一个：https://qdzy.xccstu.top/qdzy/site/yzrj.html
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># python 3.8以后会被禁用，可以换成  time.process_time </span><br><span class="line">pi@raspberrypi:~&#x2F;code $ python3 test3.py</span><br><span class="line">test3.py:2: DeprecationWarning: time.clock has been deprecated in Python 3.3 and will be removed from Python 3.8: use time.perf_counter or time.process_time instead</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#实例程序</span><br><span class="line">import time</span><br><span class="line">time1&#x3D;time.process_time() # 返回第一个时间</span><br><span class="line">time.sleep(5)</span><br><span class="line">time2&#x3D;time.process_time() # 中间那段程序跑完返回第二个时间</span><br><span class="line">print(time2-time1)  #做差就是间隔时间</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#运行结果</span><br><span class="line">pi@raspberrypi:~&#x2F;code $ python3 test3.py</span><br><span class="line">5.557400000000268e-05</span><br><span class="line">pi@raspberrypi:~&#x2F;code $</span><br></pre></td></tr></table></figure>
 
-#### 6. 登录
-&gt; 1. 输入刚才ping到的IP
-&gt; 2. 默认用户名：pi 默认密码：raspberry
-
-![image](http://image.qianduan.ltd/s7.png)</code></pre>
         </div>
         
         <div class="level is-size-7 is-uppercase">
@@ -234,16 +202,16 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/12/25/docker1/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/12/25/rpiUse1/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">centos7配置docker</span>
+                <span class="level-item">树莓派实战（1）：点亮小灯</span>
             </a>
         </div>
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/12/25/rpiPre2/">
-                <span class="level-item">树莓派使用基础教程（2）系统安装及远程登陆</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/12/25/rpiUse3/">
+                <span class="level-item">树莓派实战（3）按键控制小灯</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -787,7 +755,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="树莓派使用基础教程（1）系统安装及远程登陆" height="28">
+                    <img src="/images/logo.png" alt="树莓派实战（2）让小灯bling~bling~" height="28">
                 
                 </a>
                 <p class="is-size-7">

@@ -7,21 +7,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>树莓派使用基础教程（1）系统安装及远程登陆 - 许许如生前端</title>
+<title>树莓派使用基础教程（3）文件操作 - 许许如生前端</title>
 
 
     <meta property="og:type" content="article">
-<meta property="og:title" content="树莓派使用基础教程（1）系统安装及远程登陆">
-<meta property="og:url" content="http://yoursite.com/child/2019/12/25/rpiPre1/index.html">
+<meta property="og:title" content="树莓派使用基础教程（3）文件操作">
+<meta property="og:url" content="http://yoursite.com/child/2019/12/25/rpiPre3/index.html">
 <meta property="og:site_name" content="许许如生前端">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://image.qianduan.ltd/blogscenery1.jpg">
+<meta property="og:image" content="http://image.qianduan.ltd/scenery2.jpg">
 <meta property="article:published_time" content="2019-12-25T03:13:18.000Z">
-<meta property="article:modified_time" content="2019-12-25T08:40:01.665Z">
+<meta property="article:modified_time" content="2019-12-25T08:20:27.723Z">
 <meta property="article:author" content="许许如生">
 <meta property="article:tag" content="树莓派">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://image.qianduan.ltd/blogscenery1.jpg">
+<meta name="twitter:image" content="http://image.qianduan.ltd/scenery2.jpg">
 
 
 
@@ -79,7 +79,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="树莓派使用基础教程（1）系统安装及远程登陆" height="28">
+                <img src="/images/logo.png" alt="树莓派使用基础教程（3）文件操作" height="28">
             
             </a>
         </div>
@@ -128,7 +128,7 @@
     
     <div class="card-image">
         <span  class="image is-7by1">
-            <img class="thumbnail" src="http://image.qianduan.ltd/blogscenery1.jpg" alt="树莓派使用基础教程（1）系统安装及远程登陆">
+            <img class="thumbnail" src="http://image.qianduan.ltd/scenery2.jpg" alt="树莓派使用基础教程（3）文件操作">
         </span>
     </div>
     
@@ -146,7 +146,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes read (About 531 words)
+                    5 minutes read (About 821 words)
                 </span>
                 
                 
@@ -155,61 +155,51 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                树莓派使用基础教程（1）系统安装及远程登陆
+                树莓派使用基础教程（3）文件操作
             
         </h1>
         <div class="content">
-            <h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h3 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h3><blockquote>
-<p>树莓派提供了系统安装工具<a href="https://www.raspberrypi.org/documentation/installation/noobs.md">NOOBS</a></p>
+            <h1 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h1><h3 id="1-操作文件"><a href="#1-操作文件" class="headerlink" title="1. 操作文件"></a>1. 操作文件</h3><blockquote>
+<p>主要针对文本文件</p>
 </blockquote>
-<h4 id="1-进入下载页面"><a href="#1-进入下载页面" class="headerlink" title="1. 进入下载页面"></a>1. 进入下载页面</h4><blockquote>
-<p>左侧是 图形化界面的系统、右侧是不带图形化界面的系统，没什么区别 <a href="https://www.raspberrypi.org/downloads/">https://www.raspberrypi.org/downloads/</a> 我们选右边这个，高级一点<br> <img src="http://image.qianduan.ltd/s1.png" alt="image"></p>
-</blockquote>
-<h4 id="2-选择一种方式下载（迅雷好像快一点）"><a href="#2-选择一种方式下载（迅雷好像快一点）" class="headerlink" title="2. 选择一种方式下载（迅雷好像快一点）"></a>2. 选择一种方式下载（迅雷好像快一点）</h4><blockquote>
-<p>网盘我也存了一份：<a href="https://pan.baidu.com/s/1QFVUocKJpe1QmxssRWuRHg">https://pan.baidu.com/s/1QFVUocKJpe1QmxssRWuRHg</a></p>
-</blockquote>
-<p><img src="http://image.qianduan.ltd/s2.png" alt="image"></p>
-<h4 id="3-解压"><a href="#3-解压" class="headerlink" title="3. 解压"></a>3. 解压</h4><blockquote>
-<p>解压下来是这个样子，目录不要含有中文，不然做系统盘会出错</p>
-</blockquote>
-<p><img src="http://image.qianduan.ltd/s6.png" alt="image"></p>
-<h4 id="4-格式化sd卡，格式化成FAT"><a href="#4-格式化sd卡，格式化成FAT" class="headerlink" title="4. 格式化sd卡，格式化成FAT"></a>4. 格式化sd卡，格式化成FAT</h4><blockquote>
-<p>感觉格式化完内存显示有问题用磁盘管理工具重新分一下区然后重新格式化</p>
-</blockquote>
-<h4 id="5-下载系统写入工具"><a href="#5-下载系统写入工具" class="headerlink" title="5. 下载系统写入工具"></a>5. 下载系统写入工具</h4><blockquote>
-<p>推荐使用 diskimage，扔个CDN加速的下载链接给你：<a href="http://files.qianduan.ltd/win32diskimager-1.0.0-install.exe">http://files.qianduan.ltd/win32diskimager-1.0.0-install.exe</a></p>
-</blockquote>
-<h4 id="6-写入系统文件"><a href="#6-写入系统文件" class="headerlink" title="6. 写入系统文件"></a>6. 写入系统文件</h4><p><img src="http://image.qianduan.ltd/s8.png" alt="image"></p>
-<h4 id="7-emmm快成功了"><a href="#7-emmm快成功了" class="headerlink" title="7. emmm快成功了"></a>7. emmm快成功了</h4><h3 id="通过ssh链接"><a href="#通过ssh链接" class="headerlink" title="通过ssh链接"></a>通过ssh链接</h3><h4 id="1-在boot目录下写入-SSH文件"><a href="#1-在boot目录下写入-SSH文件" class="headerlink" title="1. 在boot目录下写入 SSH文件"></a>1. 在boot目录下写入 SSH文件</h4><h4 id="2-在根目录下新建-wpa-supplicant-conf"><a href="#2-在根目录下新建-wpa-supplicant-conf" class="headerlink" title="2. 在根目录下新建 wpa_supplicant.conf"></a>2. 在根目录下新建 <code>wpa_supplicant.conf</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">country&#x3D;CN</span><br><span class="line">ctrl_interface&#x3D;DIR&#x3D;&#x2F;var&#x2F;run&#x2F;wpa_supplicant GROUP&#x3D;netdev</span><br><span class="line">update_config&#x3D;1</span><br><span class="line">network&#x3D;&#123;</span><br><span class="line">    ssid&#x3D;&quot;WiFi-A&quot;</span><br><span class="line">    psk&#x3D;&quot;12345678&quot;</span><br><span class="line">    key_mgmt&#x3D;WPA-PSK</span><br><span class="line">    priority&#x3D;1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="文件常用命令-python"><a href="#文件常用命令-python" class="headerlink" title="文件常用命令 (python)"></a>文件常用命令 (python)</h5><ul>
+<li>查询当前目录文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; os.listdir()</span><br><span class="line">[&#39;test2.py&#39;, &#39;test1.py&#39;, &#39;test3.py&#39;]</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>创建文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; import os</span><br><span class="line">&gt;&gt;&gt; filename&#x3D;&quot;test4.py&quot;</span><br><span class="line">&gt;&gt;&gt; os.mknod(filename)</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改文件名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; os.rename(&quot;test4.py&quot;,&quot;test5.py&quot;)</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>删除文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; os.remove(&quot;test5.py&quot;)</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>打开文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; test&#x3D;open(&quot;test.txt&quot;)</span><br></pre></td></tr></table></figure></li>
+<li><p>写入文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; test&#x3D;open(&quot;test.txt&quot;)  # 打开文件</span><br><span class="line">&gt;&gt;&gt; testnum&#x3D;10   #定义写入变量</span><br><span class="line">&gt;&gt;&gt; test.write(testnum)  #写入函数 open</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span><br><span class="line">TypeError: write() argument must be str, not int # 报错，写入文件类型只能是数字</span><br><span class="line">&gt;&gt;&gt; teststring&#x3D;&quot;123456&quot; # 写一个字符串重新写入</span><br><span class="line">&gt;&gt;&gt; test.write(teststring)</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span><br><span class="line">io.UnsupportedOperation: not writable #再次报错，文件只读 </span><br><span class="line">&gt;&gt;&gt; test&#x3D;open(&quot;test.txt&quot;,&quot;w&quot;) #重新打开文件，mode写成 “w” “a”不会擦除 可写。但是w会移除原有内容</span><br><span class="line">&gt;&gt;&gt; test.write(teststring)</span><br><span class="line">6</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>读取文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; testread&#x3D;open(&quot;test.txt&quot;,&quot;r&quot;)</span><br><span class="line">&gt;&gt;&gt; test_data&#x3D;testread()</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span><br><span class="line">TypeError: &#39;_io.TextIOWrapper&#39; object is not callable</span><br><span class="line">&gt;&gt;&gt; test_data&#x3D;testread.read()</span><br><span class="line">&gt;&gt;&gt; print(test_data)</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>#ssid:网络的ssid</p>
-</blockquote>
-<blockquote>
-<p>#psk:密码</p>
-</blockquote>
-<blockquote>
-<p>#priority:连接优先级，数字越大优先级越高（不可以是负数）</p>
-</blockquote>
-<blockquote>
-<p>#scan_ssid:连接隐藏WiFi时需要指定该值为1</p>
-</blockquote>
-<blockquote>
-<p>#key_mgmt:加密方式 （进路由器后台看）</p>
-<blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#96;&#96;&#96; key_mgmt&#x3D;NONE &#96;&#96;&#96; ：WEP加密</span><br><span class="line"></span><br><span class="line">![image](http:&#x2F;&#x2F;image.qianduan.ltd&#x2F;s10.png)</span><br><span class="line">#### 3. 把sd卡安装至卡槽，上电启动</span><br><span class="line"></span><br><span class="line">#### 4. 查看树莓派IP </span><br><span class="line">1. 可以通过路由器后台查看</span><br><span class="line">![image](http:&#x2F;&#x2F;image.qianduan.ltd&#x2F;s5.png)</span><br><span class="line">2. 用命令ping一下 </span><br></pre></td></tr></table></figure>
-<p>ping -4 raspberrypi</p>
-</blockquote>
-</blockquote>
-<pre><code>&gt; 默认ping出的是IPV6，所以加个 -4 强制转换一下
-#### 5. 下载个远程登陆工具
-&gt; 1. xshell （相对较专业）和 putty（开源轻便） 选一个：https://qdzy.xccstu.top/qdzy/site/yzrj.html
+</li>
+</ul>
+<h3 id="2-函数"><a href="#2-函数" class="headerlink" title="2. 函数"></a>2. 函数</h3><ul>
+<li>定义函数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def funcname():</span><br><span class="line">    statement1  #参数</span><br><span class="line">    statement2</span><br><span class="line">    return value #返回值</span><br></pre></td></tr></table></figure>
 
-#### 6. 登录
-&gt; 1. 输入刚才ping到的IP
-&gt; 2. 默认用户名：pi 默认密码：raspberry
+<ul>
+<li>调用函数<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">funcname()</span><br></pre></td></tr></table></figure></li>
+<li>设定参数默认值<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">def funcname(width,height&#x3D;20):</span><br></pre></td></tr></table></figure>
 
-![image](http://image.qianduan.ltd/s7.png)</code></pre>
+</li>
+</ul>
+<h3 id="3-模块"><a href="#3-模块" class="headerlink" title="3. 模块"></a>3. 模块</h3><ul>
+<li>列出一个模块所有函数<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; import os  </span><br><span class="line">&gt;&gt;&gt; dir(os)  #列出所有函数</span><br><span class="line">[&#39;CLD_CONTINUED&#39;, &#39;CLD_DUMPED&#39;, &#39;CLD_EXITED&#39;, &#39;CLD_TRAPPED&#39;, &#39;DirEntry&#39;, &#39;EX_CANTCREAT&#39;, &#39;EX_CONFIG&#39;, &#39;EX_DATAERR&#39;, &#39;EX_IOERR&#39;, &#39;EX_NOHOST&#39;, &#39;EX_NOINPUT&#39;, &#39;EX_NOPERM&#39;, &#39;EX_NOUSER&#39;, &#39;EX_OK&#39;, &#39;EX_OSERR&#39;, &#39;EX_OSFILE&#39;, &#39;EX_PROTOCOL&#39;, &#39;EX_SOFTWARE&#39;, &#39;EX_TEMPFAIL&#39;, &#39;EX_UNAVAILABLE&#39;, &#39;EX_USAGE&#39;, &#39;F_LOCK&#39;, &#39;F_OK&#39;, &#39;F_TEST&#39;, &#39;F_TLOCK&#39;, &#39;F_ULOCK&#39;, &#39;GRND_NONBLOCK&#39;, &#39;GRND_RANDOM&#39;, &#39;MutableMapping&#39;, &#39;NGROUPS_MAX&#39;, &#39;O_ACCMODE&#39;, &#39;O_APPEND&#39;, &#39;O_ASYNC&#39;, &#39;O_CLOEXEC&#39;, &#39;O_CREAT&#39;, &#39;O_DIRECT&#39;, &#39;O_DIRECTORY&#39;, &#39;O_DSYNC&#39;, &#39;O_EXCL&#39;, &#39;O_LARGEFILE&#39;, &#39;O_NDELAY&#39;, &#39;O_NOATIME&#39;, &#39;O_NOCTTY&#39;, &#39;O_NOFOLLOW&#39;, &#39;O_NONBLOCK&#39;, &#39;O_PATH&#39;, &#39;O_RDONLY&#39;, &#39;O_RDWR&#39;, &#39;O_RSYNC&#39;, &#39;O_SYNC&#39;, &#39;O_TMPFILE&#39;, &#39;O_TRUNC&#39;, &#39;O_WRONLY&#39;, &#39;POSIX_FADV_DONTNEED&#39;, &#39;POSIX_FADV_NOREUSE&#39;, &#39;POSIX_FADV_NORMAL&#39;, &#39;POSIX_FADV_RANDOM&#39;, &#39;POSIX_FADV_SEQUENTIAL&#39;, &#39;POSIX_FADV_WILLNEED&#39;, &#39;PRIO_PGRP&#39;, &#39;PRIO_PROCESS&#39;, &#39;PRIO_USER&#39;, &#39;P_ALL&#39;, &#39;P_NOWAIT&#39;, &#39;P_NOWAITO&#39;, &#39;P_PGID&#39;, &#39;P_PID&#39;, &#39;P_WAIT&#39;, &#39;PathLike&#39;, &#39;RTLD_DEEPBIND&#39;, &#39;RTLD_GLOBAL&#39;, &#39;RTLD_LAZY&#39;, &#39;RTLD_LOCAL&#39;, &#39;RTLD_NODELETE&#39;, &#39;RTLD_NOLOAD&#39;, &#39;RTLD_NOW&#39;, &#39;RWF_DSYNC&#39;, &#39;RWF_HIPRI&#39;, &#39;RWF_NOWAIT&#39;, &#39;RWF_SYNC&#39;, &#39;R_OK&#39;, &#39;SCHED_BATCH&#39;, &#39;SCHED_FIFO&#39;, &#39;SCHED_IDLE&#39;, &#39;SCHED_OTHER&#39;, &#39;SCHED_RESET_ON_FORK&#39;, &#39;SCHED_RR&#39;, &#39;SEEK_CUR&#39;, &#39;SEEK_DATA&#39;, &#39;SEEK_END&#39;, &#39;SEEK_HOLE&#39;, &#39;SEEK_SET&#39;, &#39;ST_APPEND&#39;, &#39;ST_MANDLOCK&#39;, &#39;ST_NOATIME&#39;, &#39;ST_NODEV&#39;, &#39;ST_NODIRATIME&#39;, &#39;ST_NOEXEC&#39;, &#39;ST_NOSUID&#39;, &#39;ST_RDONLY&#39;, &#39;ST_RELATIME&#39;, &#39;ST_SYNCHRONOUS&#39;, &#39;ST_WRITE&#39;, &#39;TMP_MAX&#39;, &#39;WCONTINUED&#39;, &#39;WCOREDUMP&#39;, &#39;WEXITED&#39;, &#39;WEXITSTATUS&#39;, &#39;WIFCONTINUED&#39;, &#39;WIFEXITED&#39;, &#39;WIFSIGNALED&#39;, &#39;WIFSTOPPED&#39;, &#39;WNOHANG&#39;, &#39;WNOWAIT&#39;, &#39;WSTOPPED&#39;, &#39;WSTOPSIG&#39;, &#39;WTERMSIG&#39;, &#39;WUNTRACED&#39;, &#39;W_OK&#39;, &#39;XATTR_CREATE&#39;, &#39;XATTR_REPLACE&#39;, &#39;XATTR_SIZE_MAX&#39;, &#39;X_OK&#39;, &#39;_Environ&#39;, &#39;__all__&#39;, &#39;__builtins__&#39;, &#39;__cached__&#39;, &#39;__doc__&#39;, &#39;__file__&#39;, &#39;__loader__&#39;, &#39;__name__&#39;, &#39;__package__&#39;, &#39;__spec__&#39;, &#39;_execvpe&#39;, &#39;_exists&#39;, &#39;_exit&#39;, &#39;_fspath&#39;, &#39;_fwalk&#39;, &#39;_get_exports_list&#39;, &#39;_putenv&#39;, &#39;_spawnvef&#39;, &#39;_unsetenv&#39;, &#39;_wrap_close&#39;, &#39;abc&#39;, &#39;abort&#39;, &#39;access&#39;, &#39;altsep&#39;, &#39;chdir&#39;, &#39;chmod&#39;, &#39;chown&#39;, &#39;chroot&#39;, &#39;close&#39;, &#39;closerange&#39;, &#39;confstr&#39;, &#39;confstr_names&#39;, &#39;cpu_count&#39;, &#39;ctermid&#39;, &#39;curdir&#39;, &#39;defpath&#39;, &#39;device_encoding&#39;, &#39;devnull&#39;, &#39;dup&#39;, &#39;dup2&#39;, &#39;environ&#39;, &#39;environb&#39;, &#39;error&#39;, &#39;execl&#39;, &#39;execle&#39;, &#39;execlp&#39;, &#39;execlpe&#39;, &#39;execv&#39;, &#39;execve&#39;, &#39;execvp&#39;, &#39;execvpe&#39;, &#39;extsep&#39;, &#39;fchdir&#39;, &#39;fchmod&#39;, &#39;fchown&#39;, &#39;fdatasync&#39;, &#39;fdopen&#39;, &#39;fork&#39;, &#39;forkpty&#39;, &#39;fpathconf&#39;, &#39;fsdecode&#39;, &#39;fsencode&#39;, &#39;fspath&#39;, &#39;fstat&#39;, &#39;fstatvfs&#39;, &#39;fsync&#39;, &#39;ftruncate&#39;, &#39;fwalk&#39;, &#39;get_blocking&#39;, &#39;get_exec_path&#39;, &#39;get_inheritable&#39;, &#39;get_terminal_size&#39;, &#39;getcwd&#39;, &#39;getcwdb&#39;, &#39;getegid&#39;, &#39;getenv&#39;, &#39;getenvb&#39;, &#39;geteuid&#39;, &#39;getgid&#39;, &#39;getgrouplist&#39;, &#39;getgroups&#39;, &#39;getloadavg&#39;, &#39;getlogin&#39;, &#39;getpgid&#39;, &#39;getpgrp&#39;, &#39;getpid&#39;, &#39;getppid&#39;, &#39;getpriority&#39;, &#39;getrandom&#39;, &#39;getresgid&#39;, &#39;getresuid&#39;, &#39;getsid&#39;, &#39;getuid&#39;, &#39;getxattr&#39;, &#39;initgroups&#39;, &#39;isatty&#39;, &#39;kill&#39;, &#39;killpg&#39;, &#39;lchown&#39;, &#39;linesep&#39;, &#39;link&#39;, &#39;listdir&#39;, &#39;listxattr&#39;, &#39;lockf&#39;, &#39;lseek&#39;, &#39;lstat&#39;, &#39;major&#39;, &#39;makedev&#39;, &#39;makedirs&#39;, &#39;minor&#39;, &#39;mkdir&#39;, &#39;mkfifo&#39;, &#39;mknod&#39;, &#39;name&#39;, &#39;nice&#39;, &#39;open&#39;, &#39;openpty&#39;, &#39;pardir&#39;, &#39;path&#39;, &#39;pathconf&#39;, &#39;pathconf_names&#39;, &#39;pathsep&#39;, &#39;pipe&#39;, &#39;pipe2&#39;, &#39;popen&#39;, &#39;posix_fadvise&#39;, &#39;posix_fallocate&#39;, &#39;pread&#39;, &#39;preadv&#39;, &#39;putenv&#39;, &#39;pwrite&#39;, &#39;pwritev&#39;, &#39;read&#39;, &#39;readlink&#39;, &#39;readv&#39;, &#39;register_at_fork&#39;, &#39;remove&#39;, &#39;removedirs&#39;, &#39;removexattr&#39;, &#39;rename&#39;, &#39;renames&#39;, &#39;replace&#39;, &#39;rmdir&#39;, &#39;scandir&#39;, &#39;sched_get_priority_max&#39;, &#39;sched_get_priority_min&#39;, &#39;sched_getaffinity&#39;, &#39;sched_getparam&#39;, &#39;sched_getscheduler&#39;, &#39;sched_param&#39;, &#39;sched_rr_get_interval&#39;, &#39;sched_setaffinity&#39;, &#39;sched_setparam&#39;, &#39;sched_setscheduler&#39;, &#39;sched_yield&#39;, &#39;sendfile&#39;, &#39;sep&#39;, &#39;set_blocking&#39;, &#39;set_inheritable&#39;, &#39;setegid&#39;, &#39;seteuid&#39;, &#39;setgid&#39;, &#39;setgroups&#39;, &#39;setpgid&#39;, &#39;setpgrp&#39;, &#39;setpriority&#39;, &#39;setregid&#39;, &#39;setresgid&#39;, &#39;setresuid&#39;, &#39;setreuid&#39;, &#39;setsid&#39;, &#39;setuid&#39;, &#39;setxattr&#39;, &#39;spawnl&#39;, &#39;spawnle&#39;, &#39;spawnlp&#39;, &#39;spawnlpe&#39;, &#39;spawnv&#39;, &#39;spawnve&#39;, &#39;spawnvp&#39;, &#39;spawnvpe&#39;, &#39;st&#39;, &#39;stat&#39;, &#39;stat_result&#39;, &#39;statvfs&#39;, &#39;statvfs_result&#39;, &#39;strerror&#39;, &#39;supports_bytes_environ&#39;, &#39;supports_dir_fd&#39;, &#39;supports_effective_ids&#39;, &#39;supports_fd&#39;, &#39;supports_follow_symlinks&#39;, &#39;symlink&#39;, &#39;sync&#39;, &#39;sys&#39;, &#39;sysconf&#39;, &#39;sysconf_names&#39;, &#39;system&#39;, &#39;tcgetpgrp&#39;, &#39;tcsetpgrp&#39;, &#39;terminal_size&#39;, &#39;times&#39;, &#39;times_result&#39;, &#39;truncate&#39;, &#39;ttyname&#39;, &#39;umask&#39;, &#39;uname&#39;, &#39;uname_result&#39;, &#39;unlink&#39;, &#39;unsetenv&#39;, &#39;urandom&#39;, &#39;utime&#39;, &#39;wait&#39;, &#39;wait3&#39;, &#39;wait4&#39;, &#39;waitid&#39;, &#39;waitid_result&#39;, &#39;waitpid&#39;, &#39;walk&#39;, &#39;write&#39;, &#39;writev&#39;]</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></li>
+<li>查询帮助信息<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">help(os.CLD_DUMPED)</span><br><span class="line">q # 退出</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
         </div>
         
         <div class="level is-size-7 is-uppercase">
@@ -234,16 +224,16 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/12/25/docker1/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/12/25/rpiPre2/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">centos7配置docker</span>
+                <span class="level-item">树莓派使用基础教程（2）系统安装及远程登陆</span>
             </a>
         </div>
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/12/25/rpiPre2/">
-                <span class="level-item">树莓派使用基础教程（2）系统安装及远程登陆</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/12/25/rpiPre4/">
+                <span class="level-item">树莓派使用基础教程（4）自定义模块调用</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -787,7 +777,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="树莓派使用基础教程（1）系统安装及远程登陆" height="28">
+                    <img src="/images/logo.png" alt="树莓派使用基础教程（3）文件操作" height="28">
                 
                 </a>
                 <p class="is-size-7">
