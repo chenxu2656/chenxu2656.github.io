@@ -7,21 +7,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>docker修改映射端口号 - 许许如生前端</title>
+<title>Tag: javascript - 许许如生前端</title>
 
 
-    <meta property="og:type" content="article">
-<meta property="og:title" content="docker修改映射端口号">
-<meta property="og:url" content="http://yoursite.com/child/2019/12/25/docker3/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="许许如生前端">
+<meta property="og:url" content="http://yoursite.com/child/tags/javascript/index.html">
 <meta property="og:site_name" content="许许如生前端">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://image.qianduan.ltd/blogscenery2.png">
-<meta property="article:published_time" content="2019-12-25T09:04:02.000Z">
-<meta property="article:modified_time" content="2019-12-25T09:16:15.325Z">
+<meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:author" content="许许如生">
-<meta property="article:tag" content="docker">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://image.qianduan.ltd/blogscenery2.png">
+<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
 
@@ -79,7 +76,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="docker修改映射端口号" height="28">
+                <img src="/images/logo.png" alt="许许如生前端" height="28">
             
             </a>
         </div>
@@ -123,30 +120,41 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">Tags</a></li>
+            <li class="is-active"><a href="#" aria-current="page">javascript</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    
 <div class="card">
     
     <div class="card-image">
-        <span  class="image is-7by1">
-            <img class="thumbnail" src="http://image.qianduan.ltd/blogscenery2.png" alt="docker修改映射端口号">
-        </span>
+        <a href="/2019/12/26/mouse/" class="image is-7by1">
+            <img class="thumbnail" src="http://image.qianduan.ltd/blogscenery2.png" alt="js鼠标事件汇总">
+        </a>
     </div>
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-25T09:04:02.000Z">2019-12-25</time>
+                <time class="level-item has-text-grey" datetime="2019-12-26T05:32:48.000Z">2019-12-26</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/docker/">docker</a>
+                <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 294 words)
+                    5 minutes read (About 817 words)
                 </span>
                 
                 
@@ -155,51 +163,81 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                docker修改映射端口号
+                <a class="has-link-black-ter" href="/2019/12/26/mouse/">js鼠标事件汇总</a>
             
         </h1>
         <div class="content">
-            <h1 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h1><blockquote>
-<p>大家都知道docker run可以指定端口映射，但是容器一旦生成，就没有一个命令可以直接修改。通常间接的办法是，保存镜像，再创建一个新的容器，在创建时指定新的端口映射,但是这种方法比较麻烦。牛人还是有奇招的：<a href="https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container">https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container</a></p>
-</blockquote>
-<ol>
-<li><p>停止容器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop containerID</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>停止docker服务</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop docker</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改这个容器的hostconfig.json文件中的端口（如果有多个版本都需要修改）</p>
-</li>
-</ol>
-<blockquote>
-<p>centos一般默认的docker container目录在这<br><img src="http://image.qianduan.ltd/Snipaste_2019-07-19_16-59-38.png" alt="image"><br>进入这个目录</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;var&#x2F;lib&#x2F;docker&#x2F;containers&#x2F;8bee1db654916998ae2e4c716481209f290d521b74dc997bbd37cb8d9f856cc4</span><br></pre></td></tr></table></figure>
-<p><img src="http://image.qianduan.ltd/Snipaste_2019-07-19_17-03-23.png" alt="image"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi hostconfig.json</span><br></pre></td></tr></table></figure>
-<p>修改下面这个端口号就行，这里我已经修改过了<br><img src="http://image.qianduan.ltd/Snipaste_2019-07-19_17-04-30.png" alt="image"></p>
-<ol start="4">
-<li>启动docker服务<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>5) 启动容器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker start containerID</span><br></pre></td></tr></table></figure>
-<p>如果修改完之后没有正常运行，请检查原有的服务是否开启，因为有时有的服务需要重启一下</p>
-
+            <h1 id=""><a href="#" class="headerlink" title=""></a>
         </div>
         
-        <div class="level is-size-7 is-uppercase">
+        
+        <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/docker/" rel="tag">docker</a>
+                <a class="button is-size-7 is-light" href="/2019/12/26/mouse/#more">Read More</a>
                 </div>
             </div>
         </div>
         
         
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-image">
+        <a href="/2019/12/26/javascript1/" class="image is-7by1">
+            <img class="thumbnail" src="http://image.qianduan.ltd/blogscenery2.png" alt="Javascript选择器">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-12-26T05:07:28.000Z">2019-12-26</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 183 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/12/26/javascript1/">Javascript选择器</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id=""><a href="#" class="headerlink" title=""></a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/12/26/javascript1/#more">Read More</a>
+                </div>
+            </div>
+        </div>
+        
         
     </div>
 </div>
@@ -208,26 +246,7 @@
 
 
 
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/12/26/javascript1/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Javascript选择器</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/12/25/docker2/">
-                <span class="level-item">docker常用命令</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
+
 
 
 </div>
@@ -787,7 +806,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="docker修改映射端口号" height="28">
+                    <img src="/images/logo.png" alt="许许如生前端" height="28">
                 
                 </a>
                 <p class="is-size-7">
