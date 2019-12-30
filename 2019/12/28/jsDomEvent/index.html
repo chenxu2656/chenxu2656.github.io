@@ -7,22 +7,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>donate - 许许如生前端</title>
+<title>Dom事件流 - 许许如生前端</title>
 
 
-    <meta name="description" content="如果对您有帮助 请代我向中国红十字会捐赠 捐款地址 https:&#x2F;&#x2F;mv.lingxi360.com&#x2F;m&#x2F;zjgw7x?utm_bccid&#x3D;LXEhue1n">
-<meta property="og:type" content="website">
-<meta property="og:title" content="donate">
-<meta property="og:url" content="http://yoursite.com/child/donate/index.html">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="Dom事件流">
+<meta property="og:url" content="http://yoursite.com/child/2019/12/28/jsDomEvent/index.html">
 <meta property="og:site_name" content="许许如生前端">
-<meta property="og:description" content="如果对您有帮助 请代我向中国红十字会捐赠 捐款地址 https:&#x2F;&#x2F;mv.lingxi360.com&#x2F;m&#x2F;zjgw7x?utm_bccid&#x3D;LXEhue1n">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="article:published_time" content="2019-12-25T05:30:11.000Z">
-<meta property="article:modified_time" content="2019-12-25T05:57:09.370Z">
+<meta property="og:image" content="http://image.qianduan.ltd/blogscenery2.png">
+<meta property="article:published_time" content="2019-12-28T13:03:02.000Z">
+<meta property="article:modified_time" content="2019-12-28T13:37:41.421Z">
 <meta property="article:author" content="许许如生">
+<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+<meta name="twitter:image" content="http://image.qianduan.ltd/blogscenery2.png">
 
 
 
@@ -80,7 +79,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="donate" height="28">
+                <img src="/images/logo.png" alt="Dom事件流" height="28">
             
             </a>
         </div>
@@ -103,7 +102,7 @@
                 <a class="navbar-item"
                 href="/about">aboutMe</a>
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/donate">donate for redcross of china</a>
                 
             </div>
@@ -127,18 +126,75 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
+    <div class="card-image">
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="http://image.qianduan.ltd/blogscenery2.png" alt="Dom事件流">
+        </span>
+    </div>
+    
     <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-12-28T13:03:02.000Z">2019-12-28</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 167 words)
+                </span>
+                
+                
+            </div>
+        </div>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                donate
+                Dom事件流
             
         </h1>
         <div class="content">
-            <h4 id="如果对您有帮助-请代我向中国红十字会捐赠"><a href="#如果对您有帮助-请代我向中国红十字会捐赠" class="headerlink" title="如果对您有帮助 请代我向中国红十字会捐赠"></a>如果对您有帮助 请代我向中国红十字会捐赠</h4><blockquote>
-<p>捐款地址 <a href="https://mv.lingxi360.com/m/zjgw7x?utm_bccid=LXEhue1n">https://mv.lingxi360.com/m/zjgw7x?utm_bccid=LXEhue1n</a></p>
-</blockquote>
+            <h1 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h1><h2 id="1-事件流"><a href="#1-事件流" class="headerlink" title="1. 事件流"></a>1. 事件流</h2><hr>
+<p>页面中接收事件的顺，事件发生时会在元素节点之间按照特定的顺序传播</p>
+<ul>
+<li><p>捕获阶段</p>
+</li>
+<li><p>当前目标阶段</p>
+</li>
+<li><p>冒泡阶段</p>
+<h4 id="先捕获，后冒泡，捕获从上到下，冒泡从下到上"><a href="#先捕获，后冒泡，捕获从上到下，冒泡从下到上" class="headerlink" title="先捕获，后冒泡，捕获从上到下，冒泡从下到上"></a>先捕获，后冒泡，捕获从上到下，冒泡从下到上</h4><p><img src="http://image.qianduan.ltd/DASFSWDFADSFGADGA.png" alt="DOM事件流"></p>
+</li>
+<li><p>js代码只执行捕获或者冒泡的其中一个阶段</p>
+</li>
+<li><p>onclick 和 attachEvent 只能得到冒泡阶段</p>
+<h2 id="http-caibaojian-com-javascript-capture-bubble-html"><a href="#http-caibaojian-com-javascript-capture-bubble-html" class="headerlink" title="http://caibaojian.com/javascript-capture-bubble.html"></a><a href="http://caibaojian.com/javascript-capture-bubble.html">http://caibaojian.com/javascript-capture-bubble.html</a></h2></li>
+</ul>
+<h2 id="总结结论："><a href="#总结结论：" class="headerlink" title="总结结论："></a>总结结论：</h2><hr>
+<ul>
+<li><ol>
+<li>对于一个节点，其父节点有捕获和冒泡 捕获限于冒泡</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>同一节点 有捕获有冒泡 按照js书写函数顺序进行</li>
+</ol>
+</li>
+</ul>
 
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/javascript/" rel="tag">javascript</a>
+                </div>
+            </div>
         </div>
         
         
@@ -149,6 +205,27 @@
 
 
 
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/12/28/JSMIANSHI/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">JSMIANSHI</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/12/28/jsAddEvent/">
+                <span class="level-item">addEventListener(event, function, useCapture)</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
@@ -898,7 +975,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="donate" height="28">
+                    <img src="/images/logo.png" alt="Dom事件流" height="28">
                 
                 </a>
                 <p class="is-size-7">

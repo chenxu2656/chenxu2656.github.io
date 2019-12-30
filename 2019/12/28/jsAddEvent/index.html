@@ -7,22 +7,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>donate - 许许如生前端</title>
+<title>addEventListener(event, function, useCapture) - 许许如生前端</title>
 
 
-    <meta name="description" content="如果对您有帮助 请代我向中国红十字会捐赠 捐款地址 https:&#x2F;&#x2F;mv.lingxi360.com&#x2F;m&#x2F;zjgw7x?utm_bccid&#x3D;LXEhue1n">
-<meta property="og:type" content="website">
-<meta property="og:title" content="donate">
-<meta property="og:url" content="http://yoursite.com/child/donate/index.html">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="addEventListener(event, function, useCapture)">
+<meta property="og:url" content="http://yoursite.com/child/2019/12/28/jsAddEvent/index.html">
 <meta property="og:site_name" content="许许如生前端">
-<meta property="og:description" content="如果对您有帮助 请代我向中国红十字会捐赠 捐款地址 https:&#x2F;&#x2F;mv.lingxi360.com&#x2F;m&#x2F;zjgw7x?utm_bccid&#x3D;LXEhue1n">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="article:published_time" content="2019-12-25T05:30:11.000Z">
-<meta property="article:modified_time" content="2019-12-25T05:57:09.370Z">
+<meta property="og:image" content="http://image.qianduan.ltd/dog-training-joy-fun-preview.jpg">
+<meta property="article:published_time" content="2019-12-28T01:04:09.000Z">
+<meta property="article:modified_time" content="2019-12-28T12:52:19.025Z">
 <meta property="article:author" content="许许如生">
+<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+<meta name="twitter:image" content="http://image.qianduan.ltd/dog-training-joy-fun-preview.jpg">
 
 
 
@@ -80,7 +79,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="donate" height="28">
+                <img src="/images/logo.png" alt="addEventListener(event, function, useCapture)" height="28">
             
             </a>
         </div>
@@ -103,7 +102,7 @@
                 <a class="navbar-item"
                 href="/about">aboutMe</a>
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/donate">donate for redcross of china</a>
                 
             </div>
@@ -127,18 +126,78 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
+    <div class="card-image">
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="http://image.qianduan.ltd/dog-training-joy-fun-preview.jpg" alt="addEventListener(event, function, useCapture)">
+        </span>
+    </div>
+    
     <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-12-28T01:04:09.000Z">2019-12-28</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 501 words)
+                </span>
+                
+                
+            </div>
+        </div>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                donate
+                addEventListener(event, function, useCapture)
             
         </h1>
         <div class="content">
-            <h4 id="如果对您有帮助-请代我向中国红十字会捐赠"><a href="#如果对您有帮助-请代我向中国红十字会捐赠" class="headerlink" title="如果对您有帮助 请代我向中国红十字会捐赠"></a>如果对您有帮助 请代我向中国红十字会捐赠</h4><blockquote>
-<p>捐款地址 <a href="https://mv.lingxi360.com/m/zjgw7x?utm_bccid=LXEhue1n">https://mv.lingxi360.com/m/zjgw7x?utm_bccid=LXEhue1n</a></p>
-</blockquote>
+            <h1 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h1><h2 id="1-事件注册方式-onclick-和-addEventListener"><a href="#1-事件注册方式-onclick-和-addEventListener" class="headerlink" title="1. 事件注册方式 onclick 和 addEventListener"></a>1. 事件注册方式 onclick 和 addEventListener</h2><hr>
+<h3 id="1-事件源-事件类型-事件处理程序-for-example-onclick"><a href="#1-事件源-事件类型-事件处理程序-for-example-onclick" class="headerlink" title="1. 事件源+事件类型 = 事件处理程序 (for example : onclick ..)"></a>1. 事件源+事件类型 = 事件处理程序 (for example : onclick ..)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">obj.div &#x3D;  function()&#123;</span><br><span class="line">  alert(&#39;1&#39;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="缺点：无法同时绑定多个事件"><a href="#缺点：无法同时绑定多个事件" class="headerlink" title="缺点：无法同时绑定多个事件 "></a>缺点：无法同时绑定多个事件 <br></h3><p>  比如下面这个程序，同时绑定两个事件，但是却只能触发后面一个，即只弹出 ‘2’</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;Class&quot; style&#x3D;&quot;width: 200px; height: 200px; background-color: blue; margin: 200px auto auto 200px;&quot; &gt;</span><br><span class="line">        &lt;li&gt;1&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var obj &#x3D; document.querySelector(&#39;div&#39;);</span><br><span class="line">    obj.onclick &#x3D; function()&#123;</span><br><span class="line">        alert(&#39;1&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">    obj.onclick &#x3D; function()&#123;</span><br><span class="line">        alert(&#39;2&#39;);</span><br><span class="line">    &#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="2-addEventListener"><a href="#2-addEventListener" class="headerlink" title="2. addEventListener"></a>2. addEventListener</h3><p>element.addEventListener(event, function, useCapture)</p>
+<ul>
+<li>兼容性 &gt;ie9 (&lt; ie9  could be replaced by attachEvent() )</li>
+<li>可以注册多个事件</li>
+<li>三个参数<ul>
+<li>type: 事件类型的字符串 click 、 mouseover 等 <strong>注意不要加 on</strong></li>
+<li>listener:事件处理函数</li>
+<li>useCapture ： 一个布尔类型值 默认是flase<ul>
+<li>flase ： 按照事件冒泡方式处理程序</li>
+<li>true ：按照事件捕获处理程序<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;Class&quot; style&#x3D;&quot;width: 200px; height: 200px; border: 1px solid red;&quot; &gt;</span><br><span class="line">        &lt;li style&#x3D;&quot;height: 50px; width: 100%; background-color: blue; &quot;&gt;1&lt;&#x2F;li&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var obj &#x3D; document.querySelector(&#39;div&#39;);</span><br><span class="line">    var objLi &#x3D; document.querySelector(&#39;li&#39;);</span><br><span class="line">    &#x2F;&#x2F;如果 useCapture &#x3D;&#x3D; false 会按照事件冒泡执行</span><br><span class="line">    &#x2F;&#x2F; 即： 先弹出 ‘我是子元素’ 后弹出 “我是父元素”</span><br><span class="line">    obj.addEventListener(&#39;click&#39;,function()&#123;</span><br><span class="line">        alert(&#39;我是父元素&#39;);</span><br><span class="line">    &#125;,false)</span><br><span class="line">    objLi.addEventListener(&#39;click&#39;,function()&#123;</span><br><span class="line">        alert(&#39;我是子元素&#39;);</span><br><span class="line">    &#125;,false)</span><br><span class="line">    &#x2F;&#x2F; &#x2F;&#x2F;如果 useCapture &#x3D;&#x3D; true 会按照事件冒泡执行</span><br><span class="line">    &#x2F;&#x2F; &#x2F;&#x2F; 即： 先弹出 ‘我是父元素’ 后弹出 “我是子元素”</span><br><span class="line">    obj.addEventListener(&#39;click&#39;,function()&#123;</span><br><span class="line">        alert(&#39;我是父元素&#39;);</span><br><span class="line">    &#125;,true)</span><br><span class="line">    objLi.addEventListener(&#39;click&#39;,function()&#123;</span><br><span class="line">        alert(&#39;我是子元素&#39;);</span><br><span class="line">    &#125;,true)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="3-attachEvent"><a href="#3-attachEvent" class="headerlink" title="3. attachEvent"></a>3. attachEvent</h3>target.attachEvent(eventNameWithOn, callback)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ie9 之前  而且只能用在ie9之前</li>
+<li>事件之前要加 on</li>
+</ul>
+<h3 id="4-兼容性处理"><a href="#4-兼容性处理" class="headerlink" title="4. 兼容性处理"></a>4. 兼容性处理</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 封装一个兼容函数</span><br><span class="line">    var addEvent &#x3D; function (target,eventName,fn) &#123;</span><br><span class="line">        if(addEventListener)&#123;</span><br><span class="line">            target.addEventListener(eventName,fn);</span><br><span class="line">        &#125;else if(attachEvent)&#123;</span><br><span class="line">            target.attachEvent(&#39;on&#39;+eventName,fn);</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            target[&#39;on&#39;+eventName] &#x3D; fn;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
+<h2 id="2-取消事件监听-事件解绑"><a href="#2-取消事件监听-事件解绑" class="headerlink" title="2. 取消事件监听 事件解绑"></a>2. 取消事件监听 事件解绑</h2><hr>
+<h3 id="1-target-onclick-null"><a href="#1-target-onclick-null" class="headerlink" title="1. target.onclick=null;"></a>1. target.onclick=null;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var obj &#x3D; document.querySelector(&#39;div&#39;);</span><br><span class="line">    obj.onclick &#x3D; function()&#123;</span><br><span class="line">        alert(&#39;调用成功&#39;);</span><br><span class="line">        this.onclick&#x3D; null;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-target-removeEventListener-‘click’-fn"><a href="#2-target-removeEventListener-‘click’-fn" class="headerlink" title="2. target.removeEventListener(‘click’,fn);"></a>2. target.removeEventListener(‘click’,fn);</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var obj &#x3D; document.querySelector(&#39;div&#39;);</span><br><span class="line">function func()&#123;</span><br><span class="line">    alert(&#39;调用成功&#39;);</span><br><span class="line">    this.removeEventListener(&#39;click&#39;,func)</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 封装一个兼容函数</span><br><span class="line">obj.addEventListener(&#39;click&#39;,func)</span><br></pre></td></tr></table></figure>
+<h3 id="3-target-detachEvent-‘click’-fn"><a href="#3-target-detachEvent-‘click’-fn" class="headerlink" title="3. target.detachEvent(‘click’,fn)"></a>3. target.detachEvent(‘click’,fn)</h3><p>对应 attachEvent</p>
+<h3 id="4-封装一个兼容函数"><a href="#4-封装一个兼容函数" class="headerlink" title="4. 封装一个兼容函数"></a>4. 封装一个兼容函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var obj &#x3D; document.querySelector(&#39;div&#39;);</span><br><span class="line">    function func()&#123;</span><br><span class="line">        alert(&#39;调用成功&#39;);</span><br><span class="line">        disListener(obj,&#39;click&#39;,func);</span><br><span class="line">    &#125;</span><br><span class="line">    obj.addEventListener(&#39;cilck&#39;,func)</span><br><span class="line">    &#x2F;&#x2F; 封装一个兼容函数</span><br><span class="line">    obj.addEventListener(&#39;click&#39;,func)</span><br><span class="line">    function disListener(target,eventName,func)&#123;</span><br><span class="line">        if(removeEventListener)&#123;</span><br><span class="line">            target.removeEventListener(eventName,func);</span><br><span class="line">        &#125;else if(detachEvent)&#123;</span><br><span class="line">            target.detachEvent(&#39;on&#39;+eventName,func);</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            target[&#39;on&#39;+eventName]&#x3D; null;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/javascript/" rel="tag">javascript</a>
+                </div>
+            </div>
         </div>
         
         
@@ -149,6 +208,27 @@
 
 
 
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/12/28/jsDomEvent/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Dom事件流</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/12/27/javacriptJson/">
+                <span class="level-item">javascript遍历json数组</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
@@ -898,7 +978,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="donate" height="28">
+                    <img src="/images/logo.png" alt="addEventListener(event, function, useCapture)" height="28">
                 
                 </a>
                 <p class="is-size-7">
