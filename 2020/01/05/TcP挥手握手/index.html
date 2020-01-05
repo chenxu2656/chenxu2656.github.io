@@ -7,21 +7,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>行内元素(内联元素)、块级元素、行内块级元素 - 许许如生前端</title>
+<title>Tcp的三次握手和四次挥手 - 许许如生前端</title>
 
 
     <meta property="og:type" content="article">
-<meta property="og:title" content="行内元素(内联元素)、块级元素、行内块级元素">
-<meta property="og:url" content="http://xxrsblog.cn/2020/01/02/blockInline/index.html">
+<meta property="og:title" content="Tcp的三次握手和四次挥手">
+<meta property="og:url" content="http://xxrsblog.cn/2020/01/05/TcP%E6%8C%A5%E6%89%8B%E6%8F%A1%E6%89%8B/index.html">
 <meta property="og:site_name" content="许许如生前端">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://image.qianduan.ltd/blogscenery2.png">
-<meta property="article:published_time" content="2020-01-02T07:40:41.000Z">
-<meta property="article:modified_time" content="2020-01-02T07:49:48.926Z">
+<meta property="og:image" content="http://image.qianduan.ltd/meow-small-cat-cat-animals-preview.jpg">
+<meta property="article:published_time" content="2020-01-05T08:55:55.000Z">
+<meta property="article:modified_time" content="2020-01-05T13:58:45.984Z">
 <meta property="article:author" content="许许如生">
-<meta property="article:tag" content="css">
+<meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://image.qianduan.ltd/blogscenery2.png">
+<meta name="twitter:image" content="http://image.qianduan.ltd/meow-small-cat-cat-animals-preview.jpg">
 
 
 
@@ -87,7 +87,7 @@ var _hmt = _hmt || [];
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="行内元素(内联元素)、块级元素、行内块级元素" height="28">
+                <img src="/images/logo.png" alt="Tcp的三次握手和四次挥手" height="28">
             
             </a>
         </div>
@@ -136,7 +136,7 @@ var _hmt = _hmt || [];
     
     <div class="card-image">
         <span  class="image is-7by1">
-            <img class="thumbnail" src="http://image.qianduan.ltd/blogscenery2.png" alt="行内元素(内联元素)、块级元素、行内块级元素">
+            <img class="thumbnail" src="http://image.qianduan.ltd/meow-small-cat-cat-animals-preview.jpg" alt="Tcp的三次握手和四次挥手">
         </span>
     </div>
     
@@ -144,17 +144,17 @@ var _hmt = _hmt || [];
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-01-02T07:40:41.000Z">2020-01-02</time>
+                <time class="level-item has-text-grey" datetime="2020-01-05T08:55:55.000Z">2020-01-05</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/css/">css</a>
+                <a class="has-link-grey -link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 117 words)
+                    15 minutes read (About 2236 words)
                 </span>
                 
                 
@@ -163,32 +163,178 @@ var _hmt = _hmt || [];
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                行内元素(内联元素)、块级元素、行内块级元素
+                Tcp的三次握手和四次挥手
             
         </h1>
         <div class="content">
-            <h1 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h1><h1 id="1-行内元素-inline"><a href="#1-行内元素-inline" class="headerlink" title="1. 行内元素 inline"></a>1. 行内元素 inline</h1><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见行内元素</span><br><span class="line">&lt;a&gt; &lt;span&gt; &lt;br&gt; &lt;li&gt; &lt;em&gt; &lt;strong&gt; &lt;label&gt; &lt;q&gt; &lt;var&gt; &lt;cite&gt; &lt;code&gt;</span><br></pre></td></tr></table></figure>
-<p>特点</p>
+            <h1 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h1><h1 id="一、TCP的三次握手及相关问题"><a href="#一、TCP的三次握手及相关问题" class="headerlink" title="一、TCP的三次握手及相关问题"></a>一、TCP的三次握手及相关问题</h1><hr>
+<h2 id="1-TCP报文段首部格式"><a href="#1-TCP报文段首部格式" class="headerlink" title="1. TCP报文段首部格式"></a>1. TCP报文段首部格式</h2><hr>
+<p><img src="http://image.qianduan.ltd/1290987-20190615111551823-1173939851.png" alt="TCP报文段首部格式"></p>
 <ul>
-<li>不换行</li>
-<li>高度、宽度、底部边距不可设置</li>
-<li>高度就是包含文字后者图片的高度</li>
+<li><p><strong>序号seq(sequence number)</strong>: 表示本报文段所发送的数据的第一个字节序号</p>
+<ul>
+<li>比如序号字段值是301，携带的数据共有100个字节，表示本报文段数据的第一个字节的序号是301</li>
 </ul>
-<h1 id="2-块级元素-block"><a href="#2-块级元素-block" class="headerlink" title="2. 块级元素 block"></a>2. 块级元素 block</h1><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见块级元素</span><br><span class="line">&lt;div&gt; &lt;p&gt; &lt;header&gt; &lt;ol&gt; &lt;ul&gt; &lt;Li&gt; &lt;dl&gt; &lt;table&gt; &lt;address&gt; &lt;blockquote&gt; &lt;from&gt;</span><br></pre></td></tr></table></figure>
-<p>特点</p>
+</li>
+<li><p><strong>确认号ack(acknowledge number)</strong>：表示期望收到对方下一个报文段的第一个数据字节的序号</p>
 <ul>
-<li>每个元素都从新的一行开始</li>
-<li>元素高度宽度行高以及边距都可以设置</li>
-<li>宽度不设置 默认 100%</li>
+<li>比如 B收到A发来的报文中：<ul>
+<li>序号的字段值是501（序号表示的是数据的第一个字节序号），数据长度是200</li>
+<li>则：B收到了序号为501-700的数据—-&gt;说明 B期待收到的下一个数据的序列号应该是  701</li>
+<li>于是：B把返回给A的报文中 确认号（ack）设置为701</li>
 </ul>
-<h1 id="3-内联块元素-inline-block"><a href="#3-内联块元素-inline-block" class="headerlink" title="3. 内联块元素  inline-block"></a>3. 内联块元素  inline-block</h1><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img&gt; &lt;input&gt;</span><br></pre></td></tr></table></figure>
-<p>特点</p>
+</li>
+</ul>
+</li>
+<li><p><strong>确认ACK(AXKnowlegment)</strong>： 仅仅当ACK为1时该字段才有效，建立连接后所有传送的报文段都必须把ACK置1</p>
+</li>
+<li><p><strong>同步SYN(Synchronize Sequence Numbers)</strong>  在建立连接时用来同步序号</p>
 <ul>
-<li>不换行</li>
-<li>宽高行高边距可以设置</li>
+<li>SYN=1 ACK=0 表示是连接请求报文段</li>
+<li>SYN=1 ACK=1 表示对方同意建立连接</li>
+</ul>
+</li>
+<li><p><strong>终止FIN(FINis)</strong> 用来释放一个连接</p>
+<ul>
+<li>FIN = 1时表示要求释放连接</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2-tcp三次握手详解"><a href="#2-tcp三次握手详解" class="headerlink" title="2. tcp三次握手详解"></a>2. tcp三次握手详解</h2><hr>
+<p><img src="http://image.qianduan.ltd/2TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.png" alt="三次握手"></p>
+<ul>
+<li>客户端的初始状态是 closed</li>
+<li>服务端的初始状态是 listen</li>
+</ul>
+<hr>
+<h3 id="2-1-第一次握手"><a href="#2-1-第一次握手" class="headerlink" title="2.1 第一次握手"></a>2.1 第一次握手</h3><hr>
+<p>客户端给服务端发送请求报文段</p>
+<ul>
+<li>此报文段的同步位 SYN = 1 ，表示这是一个请求报文段 </li>
+<li>随机生成一个序列号 seq = x；<ul>
+<li>随机生成一个序列号是为了网络安全，如果序列号不是随机的容易被黑客获取到初始序列号</li>
+</ul>
+</li>
+<li>客户端的状态变成： <strong>SYN_SEND</strong>(同步已发送) </li>
+<li>这个报文段不能携带数据</li>
+</ul>
+<hr>
+<h3 id="2-2-第二次握手"><a href="#2-2-第二次握手" class="headerlink" title="2.2 第二次握手"></a>2.2 第二次握手</h3><hr>
+<p>服务端同意建立连接</p>
+<ul>
+<li>SYN = 1 , ACK = 1 表示同意建立连接</li>
+<li>确认号是 ack = 1 ; </li>
+<li>随机生成一个初始序号 seq = y;                                              </li>
+<li>不携带数据</li>
+<li>服务端状态变成 <strong>SYN_RCVD</strong>(同步已收到)</li>
+</ul>
+<hr>
+<h3 id="2-3-第三次握手"><a href="#2-3-第三次握手" class="headerlink" title="2.3 第三次握手"></a>2.3 第三次握手</h3><hr>
+<p>客户端再次向服务端给出确认</p>
+<ul>
+<li>AXK = 1</li>
+<li>确认号 ack = y + 1 ; seq = x + 1 ;</li>
+<li>客户端状态变成 ESTABLISHED</li>
+<li>当服务端收到确认后也变成 ESTABLISHED</li>
+</ul>
+<hr>
+<h2 id="3-为什么要三次握手，三次握手功能"><a href="#3-为什么要三次握手，三次握手功能" class="headerlink" title="3. 为什么要三次握手，三次握手功能"></a>3. 为什么要三次握手，三次握手功能</h2><p><img src="http://image.qianduan.ltd/Snipaste_2020-01-05_20-36-51.png" alt="三次握手功能生动解释"></p>
+<hr>
+<ul>
+<li>第一次握手可以确认： 客户端<strong>发送</strong>数据功能正常 (A发出信号)</li>
+<li>第二次握手可以确认： 服务端<strong>接收</strong>和<strong>发送</strong>功能均正常(B确认喜欢A，并发出信号)</li>
+<li>第三次握手可以确认： 客户端<strong>接收</strong>功能正常（第三个阶段才能确认A也喜欢B，第一个阶段并不能确认A喜欢B，第一个阶段A只是问了B）</li>
+</ul>
+<hr>
+<h2 id="4-半连接队列和全连接队列"><a href="#4-半连接队列和全连接队列" class="headerlink" title="4. 半连接队列和全连接队列"></a>4. 半连接队列和全连接队列</h2><hr>
+<p><img src="http://img2.cnxct.com/2015/06/tcp-sync-queue-and-accept-queue-small-1024x747.jpg" alt="引自：http://jm.taobao.org/2017/05/25/525-1/"></p>
+<ul>
+<li>第一次受到client的SYN之后，server处于SYN_RCVD状态，此时双方还没有完全建立连接，server会把这种状态下的请求连接放在一个队列里，称为半连接队列</li>
+<li>已经完成三次握手之后，建立起的连接会放在全连接队列中，如果队列满了可能会出现丢包，这样的队列称为全连接队列</li>
+<li>server发送SYN和ACK包的重传：服务器发送完SYN-ACK包，如果未收到客户确认包，服务器进行首次重传，等待一段时间仍未收到客户确认包，进行第二次重传。如果重传次数超过系统规定的最大重传次数，系统将该连接信息从半连接队列中删除。注意，每次重传等待的时间不一定相同，一般会是指数增长，例如间隔时间为 1s，2s，4s，8s……</li>
+</ul>
+<hr>
+<h2 id="5-三次握手中可以携带数据吗"><a href="#5-三次握手中可以携带数据吗" class="headerlink" title="5. 三次握手中可以携带数据吗"></a>5. 三次握手中可以携带数据吗</h2><hr>
+<p>第一次和第二次握手不可以携带信息，第三次可以携带信息，前两个阶段不可以携带信息。因为第三次握手的时候客户端才是ESTABLISHED状态，就上面那个生动的图来讲，只有第三次握手你确定了互相喜欢才可以携带一些信息（比如一起看电影、约会）</p>
+<h2 id="6-SYN-和-SYN-攻击"><a href="#6-SYN-和-SYN-攻击" class="headerlink" title="6. SYN 和 SYN 攻击"></a>6. SYN 和 SYN 攻击</h2><hr>
+<p>SYN Flood是当前最流行的DoS（拒绝服务攻击）与DDoS（分布式拒绝服务攻击）的方式之一，这是一种利用TCP协议缺陷，发送大量伪造的TCP连接请求，常用假冒的IP或IP号段发来海量的请求连接的第一个握手包（SYN包），被攻击服务器回应第二个握手包（SYN+ACK包），因为对方是假冒IP，对方永远收不到包且不会回应第三个握手包。导致被攻击服务器保持大量SYN_RECV状态的“半连接”，并且会重试默认5次回应第二个握手包，塞满TCP等待连接队列，资源耗尽（CPU满负荷或内存不足），让正常的业务请求连接不进来。</p>
+<hr>
+<h1 id="TCP的四次挥手及相关问题"><a href="#TCP的四次挥手及相关问题" class="headerlink" title="TCP的四次挥手及相关问题"></a>TCP的四次挥手及相关问题</h1><hr>
+<h2 id="1-四次挥手详解"><a href="#1-四次挥手详解" class="headerlink" title="1. 四次挥手详解"></a>1. 四次挥手详解</h2><hr>
+<p><img src="http://image.qianduan.ltd/%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B.png" alt="四次挥手"></p>
+<hr>
+<h3 id="1-1-第一次挥手"><a href="#1-1-第一次挥手" class="headerlink" title="1.1 第一次挥手"></a>1.1 第一次挥手</h3><hr>
+<p>client发出连接释放报文段</p>
+<ul>
+<li>FIN = 1 (要求释放连接)</li>
+<li>seq = u 前面传输数据的最后一个字节加1</li>
+<li>client状态：FIN_WAIT1(终止等待1、等待server确认)</li>
+</ul>
+<hr>
+<h3 id="1-2-第二次挥手"><a href="#1-2-第二次挥手" class="headerlink" title="1.2 第二次挥手"></a>1.2 第二次挥手</h3><hr>
+<p>server接收到释放报文段后发出确认 （这时候 client —&gt; server方向连接断了）</p>
+<ul>
+<li>ACK = 1 </li>
+<li>ack = u + 1 ; </li>
+<li>seq = v ; 已经发送的数据的最后一个字节序号加1</li>
+<li>server 进入CLOSE_WAIT(等待关闭状态)</li>
+<li>client 进入FIN_WAIT2(终止等待2状态)，等待server发出释放确认报文段</li>
+<li>这时候CLIENT-SERVER的连接释放了，这时候与的TCP处于<strong>办关闭状态(half-close)</strong>,这时候client已经没有数据要发了，但是这时候server还有可能向client发送数据</li>
+</ul>
+<hr>
+<h3 id="1-3-第三次挥手"><a href="#1-3-第三次挥手" class="headerlink" title="1.3 第三次挥手"></a>1.3 第三次挥手</h3><hr>
+<p>这时候server发出连接释放报文段（想让 server—&gt;client方向连接断掉）</p>
+<ul>
+<li>FIN = 1;</li>
+<li>重复发送确认报文段： ACK = 1; ack = u + 1;</li>
+<li>server状态：  LAST_ACK 等待A确认</li>
+</ul>
+<hr>
+<h3 id="1-4-第四次挥手"><a href="#1-4-第四次挥手" class="headerlink" title="1.4 第四次挥手"></a>1.4 第四次挥手</h3><hr>
+<p>client同意与server断开连接</p>
+<ul>
+<li>ACK = 1;</li>
+<li>client状态： TIME_WAIT  在2MSL之后变成CLOSED</li>
+<li>server状态： CLOSED</li>
+</ul>
+<h3 id="1-5-通俗解释一下"><a href="#1-5-通俗解释一下" class="headerlink" title="1.5 通俗解释一下"></a>1.5 通俗解释一下</h3><hr>
+<p><img src="http://image.qianduan.ltd/Snipaste_2020-01-05_21-35-59.png" alt="四次挥手"></p>
+<hr>
+<h2 id="2-为什发送端需要等待-2MSL后关闭"><a href="#2-为什发送端需要等待-2MSL后关闭" class="headerlink" title="2. 为什发送端需要等待 2MSL后关闭"></a>2. 为什发送端需要等待 2MSL后关闭</h2><hr>
+<p>MSL:(Maximum segment lifetime)最长报文寿命<br>为什么要等待两个msl？</p>
+<ul>
+<li><p>1.保证client发送的ACK可以成功到达server，如果client发送完就close了，万一报文丢失，server收不到client发来的ACK，就会超时重新进行第三次挥手，这个时间就是2MSL:即：超时等待时间+再次进行第三次挥手的事件</p>
+</li>
+<li><p>2.防止“已失效的连接请求报文段”出现在本连接中。<br>客户端在发送完最后一个ACK报文段后，再经过2MSL，就可以使本连接持续的时间内所产生的所有报文段都从网络中消失，使下一个新的连接中不会出现这种旧的连接请求报文段</p>
+</li>
+</ul>
+<hr>
+<h2 id="3-为什么第二次挥手和第三次挥手不能合并"><a href="#3-为什么第二次挥手和第三次挥手不能合并" class="headerlink" title="3. 为什么第二次挥手和第三次挥手不能合并"></a>3. 为什么第二次挥手和第三次挥手不能合并</h2><hr>
+<p>细心的同学发现，所谓四次挥手中的第二次和第三次就是把握手中的第二次拆来了。为什么不能合并？</p>
+<ul>
+<li>因为挥手过程和握手过程不同，前两次握手是不携带数据的只处理连接问题。挥手不仅要解决连接问题，还要解决数据传输问题，第二次挥手后，client只是不能发送数据了，但是并不说明不能接受数据。server可能还有数据要给client。所以二三两次不可以合并</li>
+</ul>
+<hr>
+<h1 id="引用博客"><a href="#引用博客" class="headerlink" title="引用博客"></a>引用博客</h1><hr>
+<ul>
+<li>本篇博客主要是在这篇博客基础上的修改：<a href="https://segmentfault.com/a/1190000020610336#item-1-4">https://segmentfault.com/a/1190000020610336#item-1-4</a></li>
+<li>参考文档<ul>
+<li><a href="https://blog.csdn.net/u014507230/article/details/45310847">https://blog.csdn.net/u014507230/article/details/45310847</a></li>
+<li><a href="https://blog.csdn.net/lengxiao1993/article/details/82771768">https://blog.csdn.net/lengxiao1993/article/details/82771768</a></li>
+<li><a href="https://blog.csdn.net/qq_36865108/article/details/84885506">https://blog.csdn.net/qq_36865108/article/details/84885506</a></li>
+<li><a href="https://www.jianshu.com/p/7d0f91345483">https://www.jianshu.com/p/7d0f91345483</a></li>
+<li><a href="https://cloud.tencent.com/developer/article/1115567">https://cloud.tencent.com/developer/article/1115567</a></li>
+<li><a href="https://blog.csdn.net/wudiyi815/article/details/8505726">https://blog.csdn.net/wudiyi815/article/details/8505726</a></li>
+<li><a href="http://jm.taobao.org/2017/05/25/525-1/">http://jm.taobao.org/2017/05/25/525-1/</a></li>
+<li><a href="https://www.jianshu.com/p/bbb6261cb13e">https://www.jianshu.com/p/bbb6261cb13e</a></li>
+</ul>
+</li>
+<li>书本才是最权威易懂的<ul>
+<li>《谢希仁计算机网络第六版》</li>
+</ul>
+</li>
+<li>转载标明链接哦</li>
 </ul>
 
         </div>
@@ -197,7 +343,7 @@ var _hmt = _hmt || [];
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/css/" rel="tag">css</a>
+                    <a class="has-link-grey -link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a>
                 </div>
             </div>
         </div>
@@ -218,17 +364,10 @@ var _hmt = _hmt || [];
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/01/02/cssSize/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">px、rem、em区别</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/01/01/cssweight/">
-                <span class="level-item">css 权重</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/01/04/http/">
+                <span class="level-item">http 和 https</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -1072,7 +1211,7 @@ var _hmt = _hmt || [];
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="行内元素(内联元素)、块级元素、行内块级元素" height="28">
+                    <img src="/images/logo.png" alt="Tcp的三次握手和四次挥手" height="28">
                 
                 </a>
                 <p class="is-size-7">
